@@ -9,23 +9,30 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
-            color: #00ff00;
+            color: #000000;
             padding: 20px;
+            margin: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1 {
             text-align: center;
             color: #00ff00;
-            margin-top: 20px; /* Added margin to ensure the heading is not off the page */
+            margin-top: 20px;
         }
         h2 {
             color: #00ff00;
         }
         .layer {
             margin-bottom: 40px;
-            width: 80%;
         }
         .layer ul {
             list-style-type: none;
@@ -38,61 +45,63 @@
     </style>
 </head>
 <body>
-    <h1>Codex of Financial Instruments</h1>
-    <div class="layer">
-        <h2>Layer 1: Basic Instruments</h2>
-        <ul>
-            <li><strong>Stocks (Equities):</strong> Represent ownership in a company and entitle the holder to a share of the company's profits and assets.</li>
-            <li><strong>Bonds (Debt Securities):</strong> Fixed income instruments where the investor loans money to an entity (corporate or governmental) that borrows the funds for a defined period at a fixed interest rate.</li>
-            <li><strong>Cash and Cash Equivalents:</strong> Highly liquid assets that include currency, bank deposits, and Treasury bills.</li>
-        </ul>
-    </div>
-    <div class="layer">
-        <h2>Layer 2: Derivative Instruments</h2>
-        <ul>
-            <li><strong>Options:</strong> Contracts that give the buyer the right, but not the obligation, to buy or sell an asset at a predetermined price within a specific period.</li>
-            <li><strong>Futures:</strong> Standardized contracts obligating the buyer to purchase, or the seller to sell, an asset at a predetermined future date and price.</li>
-            <li><strong>Swaps:</strong> Contracts to exchange cash flows or other financial instruments over time, such as interest rate swaps or currency swaps.</li>
-        </ul>
-    </div>
-    <div class="layer">
-        <h2>Layer 3: Hybrid Instruments</h2>
-        <ul>
-            <li><strong>Convertible Bonds:</strong> Bonds that can be converted into a predetermined number of the issuer's equity shares.</li>
-            <li><strong>Preferred Stocks:</strong> Equity shares that pay dividends at a specified rate and have priority over common stock in dividend payment and liquidation.</li>
-        </ul>
-    </div>
-    <div class="layer">
-        <h2>Layer 4: Structured Products</h2>
-        <ul>
-            <li><strong>Mortgage-Backed Securities (MBS):</strong> Pools of mortgages that are sold to investors, offering periodic payments similar to bond coupons.</li>
-            <li><strong>Collateralized Debt Obligations (CDOs):</strong> Structured financial products backed by a pool of loans and other assets and sold to institutional investors.</li>
-            <li><strong>Asset-Backed Securities (ABS):</strong> Securities backed by financial assets other than mortgages, such as credit card receivables, auto loans, or student loans.</li>
-        </ul>
-    </div>
-    <div class="layer">
-        <h2>Layer 5: Complex Derivatives</h2>
-        <ul>
-            <li><strong>Credit Default Swaps (CDS):</strong> Contracts that transfer the credit exposure of fixed income products between parties.</li>
-            <li><strong>Total Return Swaps:</strong> Agreements where one party makes payments based on a set rate, while the other party makes payments based on the return of an underlying asset, including income and capital gains.</li>
-            <li><strong>Variance Swaps:</strong> Over-the-counter financial derivatives used to hedge or speculate on the volatility of an underlying asset.</li>
-        </ul>
-    </div>
-    <div class="layer">
-        <h2>Layer 6: Alternative Investments</h2>
-        <ul>
-            <li><strong>Private Equity:</strong> Investments in private companies or buyouts of public companies that result in a delisting of public equity.</li>
-            <li><strong>Hedge Funds:</strong> Pooled funds that employ various strategies to earn active returns for their investors.</li>
-            <li><strong>Real Estate Investment Trusts (REITs):</strong> Companies that own, operate, or finance income-producing real estate.</li>
-        </ul>
-    </div>
-    <div class="layer">
-        <h2>Layer 7: Exotic Instruments</h2>
-        <ul>
-            <li><strong>Weather Derivatives:</strong> Financial instruments used by companies or individuals to hedge against the risk of weather-related losses.</li>
-            <li><strong>Catastrophe Bonds:</strong> Risk-linked securities that transfer risks from natural disasters to investors.</li>
-            <li><strong>Equity-Linked Notes (ELNs):</strong> Debt instruments with returns linked to the performance of an equity or equity index.</li>
-        </ul>
+    <div class="container">
+        <h1>Codex of Financial Instruments</h1>
+        <div class="layer">
+            <h2>Layer 1: Basic Instruments</h2>
+            <ul>
+                <li><strong>Stocks (Equities):</strong> Represent ownership in a company and entitle the holder to a share of the company's profits and assets.</li>
+                <li><strong>Bonds (Debt Securities):</strong> Fixed income instruments where the investor loans money to an entity (corporate or governmental) that borrows the funds for a defined period at a fixed interest rate.</li>
+                <li><strong>Cash and Cash Equivalents:</strong> Highly liquid assets that include currency, bank deposits, and Treasury bills.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 2: Derivative Instruments</h2>
+            <ul>
+                <li><strong>Options:</strong> Contracts that give the buyer the right, but not the obligation, to buy or sell an asset at a predetermined price within a specific period.</li>
+                <li><strong>Futures:</strong> Standardized contracts obligating the buyer to purchase, or the seller to sell, an asset at a predetermined future date and price.</li>
+                <li><strong>Swaps:</strong> Contracts to exchange cash flows or other financial instruments over time, such as interest rate swaps or currency swaps.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 3: Hybrid Instruments</h2>
+            <ul>
+                <li><strong>Convertible Bonds:</strong> Bonds that can be converted into a predetermined number of the issuer's equity shares.</li>
+                <li><strong>Preferred Stocks:</strong> Equity shares that pay dividends at a specified rate and have priority over common stock in dividend payment and liquidation.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 4: Structured Products</h2>
+            <ul>
+                <li><strong>Mortgage-Backed Securities (MBS):</strong> Pools of mortgages that are sold to investors, offering periodic payments similar to bond coupons.</li>
+                <li><strong>Collateralized Debt Obligations (CDOs):</strong> Structured financial products backed by a pool of loans and other assets and sold to institutional investors.</li>
+                <li><strong>Asset-Backed Securities (ABS):</strong> Securities backed by financial assets other than mortgages, such as credit card receivables, auto loans, or student loans.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 5: Complex Derivatives</h2>
+            <ul>
+                <li><strong>Credit Default Swaps (CDS):</strong> Contracts that transfer the credit exposure of fixed income products between parties.</li>
+                <li><strong>Total Return Swaps:</strong> Agreements where one party makes payments based on a set rate, while the other party makes payments based on the return of an underlying asset, including income and capital gains.</li>
+                <li><strong>Variance Swaps:</strong> Over-the-counter financial derivatives used to hedge or speculate on the volatility of an underlying asset.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 6: Alternative Investments</h2>
+            <ul>
+                <li><strong>Private Equity:</strong> Investments in private companies or buyouts of public companies that result in a delisting of public equity.</li>
+                <li><strong>Hedge Funds:</strong> Pooled funds that employ various strategies to earn active returns for their investors.</li>
+                <li><strong>Real Estate Investment Trusts (REITs):</strong> Companies that own, operate, or finance income-producing real estate.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 7: Exotic Instruments</h2>
+            <ul>
+                <li><strong>Weather Derivatives:</strong> Financial instruments used by companies or individuals to hedge against the risk of weather-related losses.</li>
+                <li><strong>Catastrophe Bonds:</strong> Risk-linked securities that transfer risks from natural disasters to investors.</li>
+                <li><strong>Equity-Linked Notes (ELNs):</strong> Debt instruments with returns linked to the performance of an equity or equity index.</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

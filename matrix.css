@@ -75,3 +75,4 @@ a:hover {
     content: attr(data-text);
     animation: create 10s steps(30) infinite;
 }
+

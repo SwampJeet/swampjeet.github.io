@@ -27,7 +27,7 @@
             text-align: center;
             color: #green;
             margin-top: 20px;
-            animation: matrix 1s infinite; /* Apply animation */
+            animation: matrix 1s infinite;
         }
         h2 {
             color: #green;
@@ -43,11 +43,14 @@
             margin: 10px 0;
             display: block;
         }
+        .layer li ul {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="matrix">Codex of Financial Instruments</h1> <!-- Add matrix class here -->
+        <h1 class="matrix">Codex of Financial Instruments</h1>
         <div class="layer">
             <h2>Layer 1: Basic Instruments</h2>
             <ul>
@@ -59,9 +62,20 @@
         <div class="layer">
             <h2>Layer 2: Derivative Instruments</h2>
             <ul>
-                <li><strong>Options:</strong> Contracts that give the buyer the right, but not the obligation, to buy or sell an asset at a predetermined price within a specific period.</li>
+                <li><strong>Options:</strong> Contracts that give the buyer the right, but not the obligation, to buy or sell an asset at a predetermined price within a specific period.
+                    <ul>
+                        <li><strong>Call Options:</strong> Right to buy an asset.</li>
+                        <li><strong>Put Options:</strong> Right to sell an asset.</li>
+                    </ul>
+                </li>
                 <li><strong>Futures:</strong> Standardized contracts obligating the buyer to purchase, or the seller to sell, an asset at a predetermined future date and price.</li>
-                <li><strong>Swaps:</strong> Contracts to exchange cash flows or other financial instruments over time, such as interest rate swaps or currency swaps.</li>
+                <li><strong>Swaps:</strong> Contracts to exchange cash flows or other financial instruments over time, such as interest rate swaps, currency swaps, and commodity swaps.
+                    <ul>
+                        <li><strong>Interest Rate Swaps</strong></li>
+                        <li><strong>Currency Swaps</strong></li>
+                        <li><strong>Commodity Swaps</strong></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="layer">
@@ -69,6 +83,7 @@
             <ul>
                 <li><strong>Convertible Bonds:</strong> Bonds that can be converted into a predetermined number of the issuer's equity shares.</li>
                 <li><strong>Preferred Stocks:</strong> Equity shares that pay dividends at a specified rate and have priority over common stock in dividend payment and liquidation.</li>
+                <li><strong>Exchangeable Bonds:</strong> Bonds that can be exchanged for a predetermined number of shares of a different company.</li>
             </ul>
         </div>
         <div class="layer">
@@ -77,6 +92,7 @@
                 <li><strong>Mortgage-Backed Securities (MBS):</strong> Pools of mortgages that are sold to investors, offering periodic payments similar to bond coupons.</li>
                 <li><strong>Collateralized Debt Obligations (CDOs):</strong> Structured financial products backed by a pool of loans and other assets and sold to institutional investors.</li>
                 <li><strong>Asset-Backed Securities (ABS):</strong> Securities backed by financial assets other than mortgages, such as credit card receivables, auto loans, or student loans.</li>
+                <li><strong>Collateralized Loan Obligations (CLOs):</strong> Securities backed by a pool of loans, typically leveraged loans.</li>
             </ul>
         </div>
         <div class="layer">
@@ -85,14 +101,27 @@
                 <li><strong>Credit Default Swaps (CDS):</strong> Contracts that transfer the credit exposure of fixed income products between parties.</li>
                 <li><strong>Total Return Swaps:</strong> Agreements where one party makes payments based on a set rate, while the other party makes payments based on the return of an underlying asset, including income and capital gains.</li>
                 <li><strong>Variance Swaps:</strong> Over-the-counter financial derivatives used to hedge or speculate on the volatility of an underlying asset.</li>
+                <li><strong>Interest Rate Options:</strong> Options based on interest rates, including caps, floors, and collars.</li>
             </ul>
         </div>
         <div class="layer">
             <h2>Layer 6: Alternative Investments</h2>
             <ul>
-                <li><strong>Private Equity:</strong> Investments in private companies or buyouts of public companies that result in a delisting of public equity.</li>
-                <li><strong>Hedge Funds:</strong> Pooled funds that employ various strategies to earn active returns for their investors.</li>
+                <li><strong>Private Equity:</strong> Investments in private companies or buyouts of public companies that result in a delisting of public equity.
+                    <ul>
+                        <li><strong>Venture Capital:</strong> A subset of private equity focused on early-stage companies.</li>
+                    </ul>
+                </li>
+                <li><strong>Hedge Funds:</strong> Pooled funds that employ various strategies to earn active returns for their investors.
+                    <ul>
+                        <li><strong>Long/Short Equity Funds</strong></li>
+                        <li><strong>Event-Driven Funds</strong></li>
+                        <li><strong>Global Macro Funds</strong></li>
+                    </ul>
+                </li>
                 <li><strong>Real Estate Investment Trusts (REITs):</strong> Companies that own, operate, or finance income-producing real estate.</li>
+                <li><strong>Infrastructure Funds:</strong> Investments in infrastructure assets such as transportation, utilities, and communication networks.</li>
+                <li><strong>Commodities:</strong> Investments in physical goods such as oil, gold, and agricultural products.</li>
             </ul>
         </div>
         <div class="layer">
@@ -101,6 +130,30 @@
                 <li><strong>Weather Derivatives:</strong> Financial instruments used by companies or individuals to hedge against the risk of weather-related losses.</li>
                 <li><strong>Catastrophe Bonds:</strong> Risk-linked securities that transfer risks from natural disasters to investors.</li>
                 <li><strong>Equity-Linked Notes (ELNs):</strong> Debt instruments with returns linked to the performance of an equity or equity index.</li>
+                <li><strong>Contingent Convertibles (CoCos):</strong> Bonds that convert into equity or are written down when a specific event occurs, usually related to the issuer's financial health.</li>
+                <li><strong>Binary Options:</strong> Options that pay a fixed amount if a certain condition is met, otherwise they expire worthless.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 8: Digital Assets</h2>
+            <ul>
+                <li><strong>Cryptocurrencies:</strong> Digital or virtual currencies that use cryptography for security.
+                    <ul>
+                        <li><strong>Bitcoin (BTC)</strong></li>
+                        <li><strong>Ethereum (ETH)</strong></li>
+                    </ul>
+                </li>
+                <li><strong>Stablecoins:</strong> Cryptocurrencies designed to minimize price volatility, often pegged to a fiat currency.</li>
+                <li><strong>Security Tokens:</strong> Digital tokens representing ownership in an asset, such as equity or real estate, issued via blockchain.</li>
+                <li><strong>Non-Fungible Tokens (NFTs):</strong> Unique digital assets verified using blockchain technology, often representing art, collectibles, or real estate.</li>
+            </ul>
+        </div>
+        <div class="layer">
+            <h2>Layer 9: Sustainable Investments</h2>
+            <ul>
+                <li><strong>Green Bonds:</strong> Bonds specifically earmarked to be used for climate and environmental projects.</li>
+                <li><strong>Social Bonds:</strong> Bonds used to finance projects that have a positive social impact.</li>
+                <li><strong>Sustainable Funds:</strong> Investment funds that incorporate environmental, social, and governance (ESG) criteria in their investment decisions.</li>
             </ul>
         </div>
     </div>

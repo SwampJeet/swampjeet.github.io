@@ -12,23 +12,23 @@
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
+            overflow: auto; /* Allow scrolling */
         }
         .container {
             max-width: 800px;
             width: 100%;
             padding: 20px;
             box-sizing: border-box;
+            margin: 0 auto;
         }
         h1, h2 {
             text-align: center;
             color: green;
             margin-top: 20px;
             animation: matrix 1s infinite, glow 3s ease-in-out infinite alternate;
+        }
+        p {
+            text-align: justify;
         }
         .layer {
             margin-bottom: 40px;

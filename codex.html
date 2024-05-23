@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="matrix.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #black;
-            color: #green;
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
             padding: 20px;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow: hidden;
         }
         .container {
             max-width: 800px;
@@ -23,14 +24,11 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
-            color: #green;
+            color: green;
             margin-top: 20px;
-            animation: matrix 1s infinite;
-        }
-        h2 {
-            color: #green;
+            animation: matrix 1s infinite, glow 3s ease-in-out infinite alternate;
         }
         .layer {
             margin-bottom: 40px;
@@ -46,30 +44,42 @@
         .layer li ul {
             padding-left: 20px;
         }
+        @keyframes matrix {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00;
+            }
+            50% {
+                text-shadow: none;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="matrix">Codex of Financial Instruments</h1>
 
-<div class="strategy">
-    <p>To avoid enslavement by the increasingly sophisticated and total control mechanisms outlined in the financial layers, free humans must adopt a multifaceted strategy that emphasizes education, decentralization, community resilience, regulatory reform, and technological empowerment. These moves collectively aim to empower individuals and communities, ensuring they retain autonomy and prevent the concentration of power that leads to total control.</p>
-    <ul>
-        <li><strong>Education and Awareness:</strong> The first line of defense against financial and societal enslavement is widespread education and awareness. People need to be informed about the complex financial instruments and control mechanisms that can potentially be used against them. This includes understanding basic financial literacy, the risks and benefits of various investment products, and the implications of emerging technologies like AI, blockchain, and quantum computing. By demystifying these elements, individuals can make informed decisions and resist manipulative financial practices.</li>
-        <li><strong>Decentralization of Power:</strong> To counteract the concentration of control, promoting decentralized systems is crucial. This can be achieved through the adoption of decentralized financial technologies (DeFi), blockchain, and cryptocurrencies, which reduce reliance on centralized financial institutions and governments. Decentralized systems ensure transparency, enhance security, and empower individuals to manage their assets independently. Furthermore, supporting decentralized governance models can distribute decision-making power more evenly across society, preventing the monopolization of control by a few elites.</li>
-        <li><strong>Strengthening Community Resilience:</strong> Building strong, resilient communities is essential to withstand external pressures and maintain autonomy. This involves fostering local economies through community banking, cooperative businesses, and local investment initiatives. Communities should invest in sustainable practices, such as local food production and renewable energy, to reduce dependency on external systems. Additionally, promoting social cohesion and mutual support networks can help communities collectively resist oppressive measures and support each other in times of crisis.</li>
-        <li><strong>Advocacy for Regulatory Reform:</strong> Ensuring fair and transparent financial markets requires active advocacy for regulatory reforms. Individuals and communities must pressure governments to implement regulations that protect against financial manipulation, ensure corporate accountability, and promote transparency in all financial dealings. Strengthening anti-corruption measures and enhancing oversight of financial institutions can prevent abuses of power and protect the interests of the general public. Effective regulation can also mitigate the risks associated with advanced financial instruments and technologies.</li>
-        <li><strong>Technological Empowerment:</strong> Embracing and harnessing technology in an ethical and controlled manner can empower individuals and communities. Investing in and promoting technologies that enhance privacy, security, and autonomy is critical. This includes using secure communication tools, privacy-focused financial platforms, and ethical AI systems that prioritize human well-being. Additionally, fostering innovation in these areas can create alternatives to the centralized technologies that may be used for control. By being proactive in technological adoption and development, free humans can stay ahead of potential threats and retain their freedom.</li>
-    </ul>
-</div>
-        
-      <div class="layer">
-    <h2>Layer 1: Basic Instruments</h2>
-    <ul>
-        <li><strong>Stocks (Equities):</strong> Represent ownership in a company and entitle the holder to a share of the company's profits and assets.</li>
-        <li><strong>Bonds (Debt Securities):</strong> Fixed income instruments where the investor loans money to an entity (corporate or governmental) that borrows the funds for a defined period at a fixed interest rate.</li>
-        <li><strong>Cash and Cash Equivalents:</strong> Highly liquid assets that include currency, bank deposits, and Treasury bills.</li>
-    </ul>
+        <div class="strategy">
+            <p>To avoid enslavement by the increasingly sophisticated and total control mechanisms outlined in the financial layers, free humans must adopt a multifaceted strategy that emphasizes education, decentralization, community resilience, regulatory reform, and technological empowerment. These moves collectively aim to empower individuals and communities, ensuring they retain autonomy and prevent the concentration of power that leads to total control.</p>
+            <ul>
+                <li><strong>Education and Awareness:</strong> The first line of defense against financial and societal enslavement is widespread education and awareness. People need to be informed about the complex financial instruments and control mechanisms that can potentially be used against them. This includes understanding basic financial literacy, the risks and benefits of various investment products, and the implications of emerging technologies like AI, blockchain, and quantum computing. By demystifying these elements, individuals can make informed decisions and resist manipulative financial practices.</li>
+                <li><strong>Decentralization of Power:</strong> To counteract the concentration of control, promoting decentralized systems is crucial. This can be achieved through the adoption of decentralized financial technologies (DeFi), blockchain, and cryptocurrencies, which reduce reliance on centralized financial institutions and governments. Decentralized systems ensure transparency, enhance security, and empower individuals to manage their assets independently. Furthermore, supporting decentralized governance models can distribute decision-making power more evenly across society, preventing the monopolization of control by a few elites.</li>
+                <li><strong>Strengthening Community Resilience:</strong> Building strong, resilient communities is essential to withstand external pressures and maintain autonomy. This involves fostering local economies through community banking, cooperative businesses, and local investment initiatives. Communities should invest in sustainable practices, such as local food production and renewable energy, to reduce dependency on external systems. Additionally, promoting social cohesion and mutual support networks can help communities collectively resist oppressive measures and support each other in times of crisis.</li>
+                <li><strong>Advocacy for Regulatory Reform:</strong> Ensuring fair and transparent financial markets requires active advocacy for regulatory reforms. Individuals and communities must pressure governments to implement regulations that protect against financial manipulation, ensure corporate accountability, and promote transparency in all financial dealings. Strengthening anti-corruption measures and enhancing oversight of financial institutions can prevent abuses of power and protect the interests of the general public. Effective regulation can also mitigate the risks associated with advanced financial instruments and technologies.</li>
+                <li><strong>Technological Empowerment:</strong> Embracing and harnessing technology in an ethical and controlled manner can empower individuals and communities. Investing in and promoting technologies that enhance privacy, security, and autonomy is critical. This includes using secure communication tools, privacy-focused financial platforms, and ethical AI systems that prioritize human well-being. Additionally, fostering innovation in these areas can create alternatives to the centralized technologies that may be used for control. By being proactive in technological adoption and development, free humans can stay ahead of potential threats and retain their freedom.</li>
+            </ul>
+        </div>
+            
+        <div class="layer">
+            <h2>Layer 1: Basic Instruments</h2>
+            <ul>
+                <li><strong>Stocks (Equities):</strong> Represent ownership in a company and entitle the holder to a share of the company's profits and assets.</li>
+                <li><strong>Bonds (Debt Securities):</strong> Fixed income instruments where the investor loans money to an entity (corporate or governmental) that borrows the funds for a defined period at a fixed interest rate.</li>
+                <li><strong>Cash and Cash Equivalents:</strong> Highly liquid assets that include currency, bank deposits, and Treasury bills.</li>
+            </ul>
 </div>
 
 <div class="layer">

@@ -32,7 +32,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     margin: 0 auto;
-    background: #000901; /* Semi-transparent background for readability */
+    background: #000000; /* Semi-transparent background for readability */
     border-radius: 10px; /* Rounded corners */
     position: relative;
     z-index: 1;

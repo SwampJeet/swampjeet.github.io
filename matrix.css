@@ -9,14 +9,25 @@ body {
 }
 
 .ascii-background {
-    position: fixed; /* Fixed position to cover the entire viewport */
+    position: absolute; /* Absolute position to cover the container */
     top: 0;
     left: 0;
-    width: 100%; /* Cover the entire width */
-    height: 100%; /* Cover the entire height */
+    width: 100%;
+    height: 100%;
     z-index: -1;
     background: black; /* Ensure background color is black */
+    color: rgba(0, 255, 0, 0.1); /* Low-lit green */
+    font-size: 10px;
+    white-space: pre-wrap; /* Preserve whitespace for ASCII art and wrap text */
+    pointer-events: none; /* Make sure background text doesn't interfere with other elements */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ascii-background::before {
+    content: "1010101010101010101010101010101010101010101010101010101010101010\n".repeat(100); /* Create a repeated pattern */
 }
 
 .container {
@@ -29,6 +40,7 @@ body {
     border-radius: 10px; /* Rounded corners */
     position: relative;
     z-index: 1;
+    overflow: hidden; /* Ensure content stays within container */
 }
 
 h1, h2 {

@@ -34,7 +34,7 @@ header {
     padding: 20px;
     box-sizing: border-box;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     border-radius: 10px; /* Rounded corners */
     position: relative;
     z-index: 1;

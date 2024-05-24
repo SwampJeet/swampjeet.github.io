@@ -26,10 +26,6 @@ body {
     align-items: center;
 }
 
-.ascii-background::before {
-    content: "1010101010101010101010101010101010101010101010101010101010101010\n".repeat(100); /* Create a repeated pattern */
-}
-
 .container {
     max-width: 800px;
     width: 100%;

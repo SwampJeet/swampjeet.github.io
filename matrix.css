@@ -4,7 +4,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     padding: 20px;
     margin: 0;
-    overflow: hidden; /* Changed from 'auto' to 'hidden' to prevent scrollbars */
+    overflow: auto;
     position: relative;
 }
 

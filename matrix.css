@@ -9,11 +9,11 @@ body {
 }
 
 .ascii-background {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    width: 2000px; /* Width of the ASCII background */
-    height: 2000px; /* Height of the ASCII background */
+    width: 100%; /* Width of the ASCII background */
+    height: 100%; /* Height of the ASCII background */
     transform: translate(-50%, -50%); /* Center the background */
     z-index: -1;
     font-size: 10px;

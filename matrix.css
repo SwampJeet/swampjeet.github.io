@@ -16,13 +16,6 @@ body {
     height: 100%; /* Cover the entire height */
     z-index: -1;
     background: black; /* Ensure background color is black */
-    background-image: repeating-linear-gradient(
-        0deg,
-        rgba(0, 255, 0, 0.1) 0,
-        rgba(0, 255, 0, 0.1) 1ch,
-        transparent 1ch,
-        transparent 2ch
-    );
     overflow: hidden;
 }
 

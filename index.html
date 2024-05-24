@@ -9,7 +9,7 @@
             background-color: black;
             color: green;
             font-family: 'Courier New', Courier, monospace;
-            padding: 0;
+            padding: 20px;
             margin: 0;
             overflow: hidden;
             position: relative;
@@ -27,17 +27,6 @@
             white-space: pre-wrap; /* Preserve whitespace for ASCII art and wrap text */
             overflow: hidden;
             pointer-events: none; /* Make sure background text doesn't interfere with other elements */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .ascii-background::before {
-            content: "101010101010101010101010101010101010101010101010101010101010101010\n".repeat(100);
-            display: block;
-            width: 100%;
-            height: 100%;
         }
 
         .container {
@@ -45,36 +34,34 @@
             width: 100%;
             padding: 20px;
             box-sizing: border-box;
-            margin: 20px auto;
+            margin: 0 auto;
             background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
             border-radius: 10px; /* Rounded corners */
             position: relative;
             z-index: 1;
         }
 
-        .header, .footer {
+        .matrix {
             text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8); /* Slightly darker background */
-            border-radius: 10px;
-            margin-bottom: 10px;
+            color: green;
+            animation: matrix 1s infinite, glow 3s ease-in-out infinite alternate;
         }
 
-        .links {
-            text-align: center;
-            margin: 20px 0;
+        .matrix h1 {
+            margin-top: 20px;
+            animation: matrix 1s infinite, glow 3s ease-in-out infinite alternate;
         }
 
-        .links a {
+        .matrix a {
             display: block; /* Make each link occupy its own line */
-            margin-top: 10px; /* Add margin on top of each link */
+            margin-top: 20px; /* Add margin on top of each link */
             color: green;
             text-decoration: none;
             transition: color 0.3s, text-shadow 0.3s;
             animation: matrix 1s infinite, glow 3s ease-in-out infinite alternate;
         }
 
-        .links a:hover {
+        .matrix a:hover {
             color: #00ff00;
             text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
         }
@@ -95,17 +82,24 @@
     </style>
 </head>
 <body>
-    <div class="ascii-background"></div>
+    <div class="ascii-background">
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+        10101010101010101010101010101010
+    </div>
     <div class="container">
-        <div class="header">
+        <div class="matrix">
             <h1>Welcome to the Edge of Infinity</h1>
-        </div>
-        <div class="links">
             <a href="codex.html">Follow the white rabbit</a>
             <a href="about.html">Learn more about us</a>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 Your Company</p>
         </div>
     </div>
 </body>

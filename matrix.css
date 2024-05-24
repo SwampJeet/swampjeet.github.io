@@ -8,6 +8,26 @@ body {
     position: relative;
 }
 
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid green;
+}
+
+.navbar a {
+    color: green;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s, text-shadow 0.3s;
+    animation: glow 6s ease-in-out infinite alternate; /* Slower animation */
+}
+
+.navbar a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -64,6 +84,17 @@ li {
 .matrix a:hover {
     color: #00ff00;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: green;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid green;
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes matrix {

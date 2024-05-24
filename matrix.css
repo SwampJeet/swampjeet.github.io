@@ -1,5 +1,5 @@
 body {
-    background-color: #001b04;
+    background-color: #000c02;
     color: green;
     font-family: 'Courier New', Courier, monospace;
     padding: 20px;
@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #001b04; /* Ensure background color is black */
+    background: #000c02; /* Ensure background color is black */
     color: rgba(0, 255, 0, 0.1); /* Low-lit green */
     font-size: 10px;
     white-space: pre-wrap; /* Preserve whitespace for ASCII art and wrap text */
@@ -32,7 +32,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     margin: 0 auto;
-    background: #001b04; /* Semi-transparent background for readability */
+    background: #000c02; /* Semi-transparent background for readability */
     border-radius: 10px; /* Rounded corners */
     position: relative;
     z-index: 1;

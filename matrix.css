@@ -67,7 +67,6 @@ h1 {
     text-align: center;
     color: green;
     margin-top: 20px;
-    animation: matrix 3s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
 }
 
 h2 {
@@ -97,7 +96,6 @@ li {
 
 .matrix h1 {
     margin-top: 20px;
-    animation: matrix 3s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
 }
 
 .matrix a {
@@ -105,8 +103,6 @@ li {
     margin-top: 20px; /* Add margin on top of each link */
     color: green;
     text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s;
-    animation: matrix 3s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
 }
 
 .matrix a:hover {
@@ -131,7 +127,6 @@ li {
 a {
     color: green;
     text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s;
 }
 
 a:hover {

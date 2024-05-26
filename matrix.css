@@ -63,11 +63,17 @@ footer {
     overflow: hidden; /* Ensure content stays within container */
 }
 
-h1, h2 {
+h1 {
     text-align: center;
     color: green;
     margin-top: 20px;
     animation: matrix 3s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
 }
 
 p, ul {

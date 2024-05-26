@@ -110,6 +110,25 @@ li {
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
 
+.matrix h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.matrix .link {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: green;
+    text-decoration: none;
+}
+
+.matrix .link:hover {
+    text-decoration: underline;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
 @keyframes matrix {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.5; }

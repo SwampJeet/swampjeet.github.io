@@ -91,7 +91,6 @@ li {
 .matrix {
     text-align: center;
     color: green;
-    animation: matrix 6s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
 }
 
 .matrix h2 {
@@ -106,7 +105,7 @@ li {
     margin: 10px 0; /* Add margin on top and bottom of each link */
     color: green;
     text-decoration: none;
-    animation: none; /* Disable animations for links */
+    animation: none !important; /* Disable animations for links */
 }
 
 .matrix a:hover {

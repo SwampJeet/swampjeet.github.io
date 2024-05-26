@@ -94,10 +94,6 @@ li {
     animation: matrix 6s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
 }
 
-.matrix h1 {
-    margin-top: 20px;
-}
-
 .matrix h2 {
     font-size: 2em;
     margin-bottom: 20px;

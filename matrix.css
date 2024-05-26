@@ -91,23 +91,11 @@ li {
 .matrix {
     text-align: center;
     color: green;
-    animation: matrix 3s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
+    animation: matrix 6s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
 }
 
 .matrix h1 {
     margin-top: 20px;
-}
-
-.matrix a {
-    display: block; /* Make each link occupy its own line */
-    margin-top: 20px; /* Add margin on top of each link */
-    color: green;
-    text-decoration: none;
-}
-
-.matrix a:hover {
-    color: #00ff00;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
 
 .matrix h2 {
@@ -115,16 +103,15 @@ li {
     margin-bottom: 20px;
 }
 
-.matrix .link {
-    display: block;
+.matrix a {
+    display: block; /* Make each link occupy its own line */
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 10px 0; /* Add margin on top and bottom of each link */
     color: green;
     text-decoration: none;
 }
 
-.matrix .link:hover {
-    text-decoration: underline;
+.matrix a:hover {
     color: #00ff00;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }

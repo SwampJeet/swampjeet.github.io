@@ -1,3 +1,44 @@
+.pointer {
+    cursor: pointer;
+}/* Universal Controls */
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #ff0;
+    color: #000;
+}
+
+.no-pointer {
+    pointer-events: url;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000401;
+}
+
+::-webkit-scrollbar-thumb {
+    background: green;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ff00;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     background-color: #000401;
     color: green;
@@ -179,7 +220,6 @@ a:hover {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    border-bottom: 1px solid green;
 }
 
 .song-list li:hover {

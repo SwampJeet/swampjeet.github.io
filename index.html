@@ -24,6 +24,20 @@
                 <a href="codex.html"> &gt;&gt;Follow the white rabbit&lt;&lt; </a>
                 <a href="about.html"> ~~Learn more about us~~ </a>
             </div>
+
+            <!-- Music Player Widget -->
+            <div class="music-player">
+                <h3>Music Player</h3>
+                <audio id="audioPlayer" controls>
+                    <source src="path-to-your-music-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button onclick="playAudio()">Play</button>
+                    <button onclick="pauseAudio()">Pause</button>
+                    <button onclick="stopAudio()">Stop</button>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -32,5 +46,6 @@
     </div>
     
     <script src="/matrix.js"></script>
+    <script src="/music-player.js"></script>
 </body>
 </html>

@@ -35,6 +35,8 @@ header, footer {
 
 footer {
     border-top: 1px solid green;
+    position: relative;
+    z-index: 1;
 }
 
 .navbar a {
@@ -135,4 +137,34 @@ a {
 a:hover {
     color: #00ff00;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.music-player {
+    background-color: #000401;
+    border: 1px solid green;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.music-player h3 {
+    margin-top: 0;
+    color: green;
+}
+
+.controls button {
+    background-color: #000401;
+    border: 1px solid green;
+    color: green;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.controls button:hover {
+    background-color: green;
+    color: #000401;
 }

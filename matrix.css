@@ -172,14 +172,22 @@ a:hover {
 .song-list {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 .song-list li {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-bottom: 1px solid green;
 }
 
 .song-list li:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.song-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #00ff00;
 }

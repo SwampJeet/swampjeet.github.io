@@ -154,6 +154,24 @@ a:hover {
     color: green;
 }
 
+.matrix-audio {
+    width: 100%;
+    background: none;
+    color: green;
+}
+
+.matrix-audio::-webkit-media-controls-panel {
+    background-color: #000401;
+    border: 1px solid green;
+}
+
+.matrix-audio::-webkit-media-controls-play-button,
+.matrix-audio::-webkit-media-controls-pause-button,
+.matrix-audio::-webkit-media-controls-mute-button,
+.matrix-audio::-webkit-media-controls-volume-slider {
+    filter: invert(100%);
+}
+
 .controls button {
     background-color: #000401;
     border: 1px solid green;

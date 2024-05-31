@@ -4,9 +4,9 @@ const currentSongDisplay = document.getElementById('currentSong');
 
 // List of songs
 const songs = [
-    { title: 'Song 1', src: 'audio/song1.mp3' },
-    { title: 'Song 2', src: 'audio/song2.mp3' },
-    { title: 'Song 3', src: 'audio/song3.mp3' }
+    { title: 'Song 1', src: 'English.mp3' },
+    { title: 'Song 2', src: '/Spanish.mp3' },
+    { title: 'Song 3', src: 'filler test' }
 ];
 
 let currentSongIndex = 0;

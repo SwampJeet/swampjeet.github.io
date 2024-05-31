@@ -1,12 +1,11 @@
-.pointer {
-    cursor: pointer;
-}/* Universal Controls */
+/* Universal Controls */
 html {
     scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
+    cursor: pointer; /* Ensure pointer cursor on all elements */
 }
 
 ::selection {
@@ -15,7 +14,7 @@ html {
 }
 
 .no-pointer {
-    pointer-events: url;
+    pointer-events: none;
 }
 
 ::-webkit-scrollbar {
@@ -37,9 +36,6 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-body {
     background-color: #000401;
     color: green;
     font-family: 'Courier New', Courier, monospace;

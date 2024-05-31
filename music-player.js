@@ -4,8 +4,8 @@ const currentSongDisplay = document.getElementById('currentSong');
 
 // List of songs
 const songs = [
-    { title: 'Song 1', src: 'English.mp3' },
-    { title: 'Song 2', src: '/Spanish.mp3' },
+    { title: 'English Broadcast', src: 'English.mp3' },
+    { title: 'Spanish Broadcast', src: '/Spanish.mp3' },
     { title: 'Song 3', src: 'filler test' }
 ];
 

@@ -6,7 +6,6 @@ const currentSongDisplay = document.getElementById('currentSong');
 const songs = [
     { title: 'English Broadcast', src: 'English.mp3' },
     { title: 'Spanish Broadcast', src: '/Spanish.mp3' },
-    { title: 'Song 3', src: 'filler test' }
 ];
 
 let currentSongIndex = 0;

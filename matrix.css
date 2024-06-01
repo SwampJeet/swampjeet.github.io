@@ -215,15 +215,30 @@ a:hover {
 .song-list li {
     padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Add color transition */
+    color: green; /* Match the theme */
 }
 
 .song-list li:hover {
     background-color: rgba(0, 0, 0, 0.5);
+    color: #00ff00; /* Add hover color effect */
 }
 
 .song-info {
     margin-top: 20px;
     font-size: 1.2em;
+    color: green; /* Change to green to match the theme */
+}
+
+.broadcast-link {
+    display: inline-block;
+    margin: 10px 0;
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s; /* Ensure transition effects */
+}
+
+.broadcast-link:hover {
     color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }

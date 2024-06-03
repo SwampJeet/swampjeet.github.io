@@ -221,6 +221,17 @@ a:hover {
     color: #00ff00; /* Add hover color effect */
 }
 
+.song-list li a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.song-list li a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
 .song-info {
     margin-top: 20px;
     font-size: 1.2em;
@@ -236,18 +247,6 @@ a:hover {
 }
 
 .broadcast-link:hover {
-    color: #00ff00;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-}
-
-/* Ensure all <li> elements with <a> inside have the same hover effect */
-li a {
-    color: green;
-    text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-li a:hover {
     color: #00ff00;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }

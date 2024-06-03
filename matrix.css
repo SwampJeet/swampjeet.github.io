@@ -81,7 +81,6 @@ footer {
     text-decoration: none;
     margin: 0 15px;
     transition: color 0.3s, text-shadow 0.3s;
-    /* animation: glow 6s ease-in-out infinite alternate;  Remove or comment out this line */
 }
 
 .navbar a:hover {
@@ -135,7 +134,6 @@ li {
 .matrix h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    animation: matrix 6s infinite; /* Remove glow animation from here */
 }
 
 .matrix a {
@@ -144,7 +142,6 @@ li {
     margin: 10px 0; /* Add margin on top and bottom of each link */
     color: green;
     text-decoration: none;
-    /* animation: none !important; */ /* This line is correct and can stay */
 }
 
 .matrix a:hover {
@@ -202,7 +199,7 @@ a:hover {
 }
 
 .matrix-button:hover {
-    background-color: green;
+    background-color: #00ff00;
     color: #000401;
 }
 

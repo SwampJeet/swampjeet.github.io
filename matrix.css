@@ -219,6 +219,7 @@ a:hover {
 .song-list li:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #00ff00; /* Add hover color effect */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Add glow effect */
 }
 
 .song-list li a {

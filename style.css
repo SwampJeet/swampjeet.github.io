@@ -22,50 +22,76 @@ body {
 }
 
 #player {
+    width: 500px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #444;
 }
 
 #display {
-    text-align: center;
-    margin-bottom: 10px;
-    background-color: #111;
+    width: 100%;
+    background-color: #222;
     padding: 10px;
     border-radius: 5px;
-    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid #444;
+}
+
+#visualization {
+    width: 50px;
+    height: 50px;
+    background-color: #111;
+    margin-right: 10px;
+}
+
+#song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#song-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#status-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
 }
 
 #controls {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     margin-bottom: 10px;
 }
 
-button {
-    background-color: #555;
-    color: #fff;
+#controls button {
+    background: none;
     border: none;
-    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 3px;
 }
 
-button:hover {
-    background-color: #666;
-}
-
-#progress-container {
-    width: 300px;
-}
-
-#progress {
-    width: 100%;
+#controls button img {
+    width: 30px;
+    height: 30px;
 }
 
 #playlist {
-    background-color: #222;
+    width: 500px;
+    background-color: #000;
     padding: 10px;
     border-radius: 5px;
-    width: 300px;
+    border: 2px solid #444;
 }
 
 #playlist ul {

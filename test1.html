@@ -3,125 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
-    <link rel="stylesheet" href="/matrix.css">
-    <style>
-        body {
-            margin: 0;
-            overflow: auto; /* Change from hidden to auto to allow scrolling */
-            background: black;
-        }
-        canvas#matrixCanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Ensure canvas is in the background */
-        }
-        .content {
-            position: relative;
-            z-index: 1; /* Ensure content is above the canvas */
-            padding: 20px;
-            color: green;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        header, footer {
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-            padding: 10px 0;
-            text-align: center;
-            border-bottom: 1px solid green;
-        }
-        footer {
-            border-top: 1px solid green;
-        }
-        .navbar a {
-            color: green;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s, text-shadow 0.3s;
-        }
-        .navbar a:hover {
-            color: #00ff00;
-            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-            border-radius: 10px; /* Rounded corners */
-            padding: 20px;
-        }
-        h1, h2 {
-            text-align: center;
-            color: green;
-            margin-top: 20px;
-            animation: matrix 3s infinite, glow 6s ease-in-out infinite alternate; /* Slower animation */
-        }
-        p, ul {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        @keyframes matrix {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        @keyframes glow {
-            0%, 100% {
-                text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00;
-            }
-            50% {
-                text-shadow: none;
-            }
-        }
-    </style>
+    <title>WinAmp-like Audio Player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="matrixCanvas"></canvas>
-    
-    <div class="content">
-        <header>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#codex">Codex</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        
-        <main class="container">
-            <section id="home">
-                <h1 class="matrix">Home Section</h1>
-                <p>Welcome to the Home section. This is a test paragraph to demonstrate text formatting within the HTML document. It provides a simple way to see how paragraph text is styled and displayed.</p>
-            </section>
-            
-            <section id="codex">
-                <h1 class="matrix">Codex Section</h1>
-                <p>Welcome to the Codex section. This is a test paragraph to demonstrate text formatting within the HTML document. It provides a simple way to see how paragraph text is styled and displayed.</p>
-            </section>
-            
-            <section id="about">
-                <h1 class="matrix">About Section</h1>
-                <p>Welcome to the About section. This is a test paragraph to demonstrate text formatting within the HTML document. It provides a simple way to see how paragraph text is styled and displayed.</p>
-            </section>
-            
-            <section id="contact">
-                <h1 class="matrix">Contact Section</h1>
-                <p>Welcome to the Contact section. This is a test paragraph to demonstrate text formatting within the HTML document. It provides a simple way to see how paragraph text is styled and displayed.</p>
-            </section>
-        </main>
-        
-        <footer>
-            <p> we are you </p>
-        </footer>
+    <div id="winamp">
+        <div id="player">
+            <div id="display">
+                <span id="song-title">No song playing</span>
+            </div>
+            <div id="controls">
+                <button id="play-pause">Play</button>
+                <button id="stop">Stop</button>
+                <button id="prev">Prev</button>
+                <button id="next">Next</button>
+            </div>
+            <div id="progress-container">
+                <input type="range" id="progress" value="0" step="1">
+            </div>
+        </div>
+        <div id="playlist">
+            <ul id="playlist-list">
+                <li data-src="song1.mp3">Song 1</li>
+                <li data-src="song2.mp3">Song 2</li>
+                <li data-src="song3.mp3">Song 3</li>
+            </ul>
+        </div>
     </div>
-    
-    <script src="/matrix.js"></script>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
 </body>
 </html>

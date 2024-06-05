@@ -6,9 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const stopButton = document.getElementById('stop');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
+    const shuffleButton = document.getElementById('shuffle');
     const songTitle = document.getElementById('song-title');
     const playlistItems = document.querySelectorAll('#playlist-list li');
-    const progress = document.getElementById('progress');
+    const kbps = document.getElementById('kbps');
+    const khz = document.getElementById('khz');
+    const mode = document.getElementById('mode');
 
     let currentSongIndex = 0;
     let isPlaying = false;
@@ -16,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     playPauseButton.addEventListener('click', () => {
         if (isPlaying) {
             audio.pause();
-            playPauseButton.textContent = 'Play';
+            playPauseButton.querySelector('img').src = 'icons/play.png';
         } else {
             audio.play();
-            playPauseButton.textContent = 'Pause';
+            playPauseButton.querySelector('img').src = 'icons/pause.png';
         }
         isPlaying = !isPlaying;
     });
@@ -27,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stopButton.addEventListener('click', () => {
         audio.pause();
         audio.currentTime = 0;
-        playPauseButton.textContent = 'Play';
+        playPauseButton.querySelector('img').src = 'icons/play.png';
         isPlaying = false;
     });
 
@@ -35,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentSongIndex = (currentSongIndex - 1 + playlistItems.length) % playlistItems.length;
         loadSong(currentSongIndex);
         audio.play();
-        playPauseButton.textContent = 'Pause';
+        playPauseButton.querySelector('img').src = 'icons/pause.png';
         isPlaying = true;
     });
 
@@ -43,7 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
         currentSongIndex = (currentSongIndex + 1) % playlistItems.length;
         loadSong(currentSongIndex);
         audio.play();
-        playPauseButton.textContent = 'Pause';
+        playPauseButton.querySelector('img').src = 'icons/pause.png';
+        isPlaying = true;
+    });
+
+    shuffleButton.addEventListener('click', () => {
+        currentSongIndex = Math.floor(Math.random() * playlistItems.length);
+        loadSong(currentSongIndex);
+        audio.play();
+        playPauseButton.querySelector('img').src = 'icons/pause.png';
         isPlaying = true;
     });
 
@@ -51,17 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             loadSong(index);
             audio.play();
-            playPauseButton.textContent = 'Pause';
+            playPauseButton.querySelector('img').src = 'icons/pause.png';
             isPlaying = true;
         });
     });
 
-    audio.addEventListener('timeupdate', () => {
-        progress.value = (audio.currentTime / audio.duration) * 100;
-    });
-
-    progress.addEventListener('input', () => {
-        audio.currentTime = (progress.value / 100) * audio.duration;
+    audio.addEventListener('loadedmetadata', () => {
+        kbps.textContent = '128 kbps';
+        khz.textContent = '44.1 kHz';
+        mode.textContent = 'stereo';
     });
 
     audio.addEventListener('ended', () => {

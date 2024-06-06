@@ -62,7 +62,7 @@ canvas#matrixCanvas {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 2; /* Ensure content is above the canvas */
+    z-index: 1; /* Ensure content is above the canvas */
     padding: 20px;
 }
 
@@ -99,7 +99,7 @@ header {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     border-radius: 10px; /* Rounded corners */
     position: relative;
-    z-index: 3;
+    z-index: 2;
     overflow: hidden; /* Ensure content stays within container */
 }
 
@@ -111,16 +111,16 @@ header {
     text-align: center;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     border-radius: 10px; /* Rounded corners */
-    position: relative;
-    z-index: 4; /* Ensure Webamp container is on top */
-}
-
-#app {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10; /* Ensure the WebAmp player is on top of everything */
+    z-index: 9999; /* Ensure Webamp container is on top */
+}
+
+#app {
+    position: fixed;
+    z-index: 10000; /* Ensure the WebAmp player is on top of everything */
 }
 
 h1 {

@@ -28,22 +28,28 @@
 
         <!-- Webamp Player -->
         <div id="app"></div>
-
     </div>
     
     <script src="/matrix.js"></script>
-    <script src="/music-player.js"></script>
     <script>
         const app = document.getElementById("app");
         const webamp = new Webamp({
             initialTracks: [
                 {
                     metaData: {
-                        artist: "DJ Mike Llama",
-                        title: "Llama Whippin' Intro"
+                        artist: "0x3ny",
+                        title: "Free Humans"
                     },
-                    url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@master/media/llama-2.91.mp3",
-                    duration: 5.322286
+                    url: "English.mp3",
+                    duration: 4.001
+                },
+                 {
+                    metaData: {
+                        artist: "0x3ny",
+                        title: "Humanos Libres"
+                    },
+                    url: "Spanish.mp3",
+                    duration: 1.001
                 }
             ],
             initialSkin: {

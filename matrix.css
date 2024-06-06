@@ -1,20 +1,60 @@
+/* Universal Controls */
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    cursor: pointer; /* Ensure pointer cursor on all elements */
+}
+
+::selection {
+    background: #ff0;
+    color: #000;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000401;
+}
+
+::-webkit-scrollbar-thumb {
+    background: green;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ff00;
+}
+
 /* matrix.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #0f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000401;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
     margin: 0;
-    overflow: hidden;
+    overflow: auto; /* Allow scrolling */
+    position: relative;
 }
 
-#matrixCanvas {
-    position: absolute;
+canvas#matrixCanvas {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Ensure canvas is in the background */
+    pointer-events: none; /* Prevent canvas from capturing pointer events */
 }
 
 .content {
@@ -22,7 +62,8 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure content is above the canvas */
+    padding: 20px;
 }
 
 header {
@@ -30,25 +71,187 @@ header {
     background-color: #000;
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid green;
 }
 
 .navbar a {
-    color: #0f0;
+    color: green;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
 .navbar a:last-child {
     margin-left: auto;
 }
 
+.navbar a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
 .container {
-    margin-top: 20px; /* Adjust this margin as needed */
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Ensure content stays within container */
+}
+
+h1 {
     text-align: center;
+    color: green;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    margin-top: 20px; /* Adjust this margin as needed */
+}
+
+p, ul {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 .matrix {
+    text-align: center;
+    color: green;
+}
+
+.matrix h2 {
+    font-size: 2em;
     margin-bottom: 20px;
+}
+
+.matrix a {
+    display: block; /* Make each link occupy its own line */
+    font-size: 1.2em;
+    margin: 10px 0; /* Add margin on top and bottom of each link */
+    color: green;
+    text-decoration: none;
+}
+
+.matrix a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+@keyframes matrix {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00;
+    }
+    50% {
+        text-shadow: none;
+    }
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.music-player {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: 1px solid green;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.music-player h3 {
+    margin-top: 0;
+    color: green;
+}
+
+.matrix-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: 1px solid green;
+    color: green;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.matrix-button:hover {
+    background-color: #00ff00;
+    color: #000401;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.song-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add color transition */
+    color: green; /* Match the theme */
+}
+
+.song-list li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #00ff00; /* Add hover color effect */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Add glow effect */
+}
+
+.song-list li a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.song-list li a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.song-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green; /* Change to green to match the theme */
+}
+
+.broadcast-link {
+    display: inline-block;
+    margin: 10px 0;
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s; /* Ensure transition effects */
+}
+
+.broadcast-link:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
 
 #app {

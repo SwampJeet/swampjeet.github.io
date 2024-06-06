@@ -257,3 +257,29 @@ a:hover {
 #app {
     margin-top: 40px; /* Adjust this margin to control the spacing */
 }
+
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid green;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+    color: green;
+}
+
+footer a {
+    color: green;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}

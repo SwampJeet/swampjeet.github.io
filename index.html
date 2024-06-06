@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dive In - We Have Music and Weaponized Autism</title>
     <link rel="stylesheet" href="/matrix.css">
+    <script src="https://unpkg.com/webamp"></script>
 </head>
 <body>
     <canvas id="matrixCanvas"></canvas>
@@ -25,7 +26,6 @@
         </main>
 
         <footer>
-            
             <!-- Custom Music Player Widget -->
             <div class="music-player">
                 <audio id="audioPlayer" class="matrix-audio"></audio>
@@ -42,11 +42,34 @@
                     <!-- Song items will be added here dynamically -->
                 </ul>
             </div>
-<p><a href="justthethreeofus.png">we are you</a></p>
+
+            <!-- Webamp Player -->
+            <div id="app"></div>
+
+            <p><a href="justthethreeofus.png">we are you</a></p>
         </footer>
     </div>
     
     <script src="/matrix.js"></script>
     <script src="/music-player.js"></script>
+    <script>
+        const app = document.getElementById("app");
+        const webamp = new Webamp({
+            initialTracks: [
+                {
+                    metaData: {
+                        artist: "DJ Mike Llama",
+                        title: "Llama Whippin' Intro"
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@master/media/llama-2.91.mp3",
+                    duration: 5.322286
+                }
+            ],
+            initialSkin: {
+                url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@master/skins/base-2.91.wsz"
+            }
+        });
+        webamp.renderWhenReady(app);
+    </script>
 </body>
 </html>

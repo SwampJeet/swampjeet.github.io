@@ -62,8 +62,9 @@ canvas#matrixCanvas {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1; /* Ensure content is above the canvas */
+    z-index: 2; /* Ensure content is above the canvas */
     padding: 20px;
+ 
 }
 
 header {
@@ -72,6 +73,7 @@ header {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid green;
+    z-index: 1;
 }
 
 .navbar a {
@@ -109,6 +111,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 10000;
+    isolation: isolate;
 }
 
 h1 {

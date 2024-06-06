@@ -62,7 +62,7 @@ canvas#matrixCanvas {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1; /* Ensure content is above the canvas */
+    z-index: 2; /* Ensure content is above the canvas */
     padding: 20px;
 }
 
@@ -99,7 +99,7 @@ header {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     border-radius: 10px; /* Rounded corners */
     position: relative;
-    z-index: 1;
+    z-index: 3;
     overflow: hidden; /* Ensure content stays within container */
 }
 
@@ -112,7 +112,7 @@ header {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     border-radius: 10px; /* Rounded corners */
     position: relative;
-    z-index: 10; /* Ensure Webamp container is on top */
+    z-index: 4; /* Ensure Webamp container is on top */
 }
 
 h1 {
@@ -268,6 +268,7 @@ a:hover {
 
 #app {
     margin-top: 40px; /* Adjust this margin to control the spacing */
+    z-index: 10;
 }
 
 footer {

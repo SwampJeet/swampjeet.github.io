@@ -92,7 +92,6 @@ header {
 
 .container {
     max-width: 800px;
-    max-heigt: 400px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -102,6 +101,18 @@ header {
     position: relative;
     z-index: 1;
     overflow: hidden; /* Ensure content stays within container */
+}
+
+.webamp-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    z-index: 1;
 }
 
 h1 {

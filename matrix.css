@@ -103,24 +103,12 @@ header {
     overflow: hidden; /* Ensure content stays within container */
 }
 
-.webamp-container {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 20px auto;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    border-radius: 10px; /* Rounded corners */
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999; /* Ensure Webamp container is on top */
-}
-
 #app {
     position: fixed;
-    z-index: 10000; /* Ensure the WebAmp player is on top of everything */
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* Ensure the WebAmp player is on top of everything */
 }
 
 h1 {

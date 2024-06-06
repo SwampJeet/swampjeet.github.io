@@ -115,6 +115,14 @@ header {
     z-index: 4; /* Ensure Webamp container is on top */
 }
 
+#app {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the WebAmp player is on top of everything */
+}
+
 h1 {
     text-align: center;
     color: green;
@@ -264,11 +272,6 @@ a:hover {
 .broadcast-link:hover {
     color: #00ff00;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-}
-
-#app {
-    margin-top: 40px; /* Adjust this margin to control the spacing */
-    z-index: 10;
 }
 
 footer {

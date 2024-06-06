@@ -107,7 +107,7 @@ header {
 
 #app {
     position: fixed;
-    top: 20px;
+    top: 500px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10000;

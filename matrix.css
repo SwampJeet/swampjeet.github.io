@@ -104,11 +104,11 @@ header {
 }
 
 #app {
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9999; /* Ensure the WebAmp player is on top of everything */
+    z-index: 10000; /* Ensure the WebAmp player is on top of everything */
 }
 
 h1 {
